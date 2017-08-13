@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../img/fontawesome-webfont.eot?v=4.6.3');
+    src: url('../img/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../img/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../img/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../img/fontawesome-webfont.ttf?v=4.6.3') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*="am-icon-"] {
+    display: inline-block;
+    font-style: normal;
+}
+[class*="am-icon-"]:before {
+    display: inline-block;
+    font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+    /*font-weight: normal; // 2
+    font-style: normal; // 2
+    vertical-align: baseline; // 3
+    line-height: 1; // 4*/
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+@-webkit-keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+.am-icon-spin {-webkit-animation: icon-spin 2s infinite linear;animation: icon-spin 2s infinite linear;}
+.am-icon-spinner::before {content:"\f110";}
+.am-dimmer {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+}
+.am-dimmer.am-active {
+    opacity: 1;
+}
+
+.am-modal {
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    left: 3%;
+    z-index: 1110;
+    display: none;
+    opacity: 0;
+    outline: 0;
+    text-align: center;
+    -webkit-transform: scale(1.185);
+    -ms-transform: scale(1.185);
+    transform: scale(1.185);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.am-modal-loading {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.am-modal:focus {
+    outline: 0;
+}
+.am-modal.am-modal-active {
+    opacity: 0.5;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.am-modal.am-modal-out {
+    opacity: 0;
+    z-index: 1109;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transform: scale(0.815);
+    -ms-transform: scale(0.815);
+    transform: scale(0.815);
+}
+.am-modal:before {
+    content: "\200B";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.am-modal-dialog {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    max-width: 100%;
+    border-radius: 6px;
+    background: #000000;
+    color:#ffffff;
+    font-size: 16px;
+    /*@media @large-up {
+      width: @modal-lg;
+      margin-left: -@modal-lg/2;
+    }*/
+}
+@media only screen and (min-width:641px) {
+    .am-modal-dialog {
+        width: 150px;
+    }
+}
+.am-modal-hd {
+    padding: 15px 10px 5px 10px;
+    font-weight: 500;
+}
+.am-modal-hd + .am-modal-bd {
+    padding-top: 0;
+}
+.am-modal-hd .am-close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.am-modal-bd {
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+    border-radius: 4px 4px 0 0;
+}
+.am-modal-bd + .am-modal-bd {
+    margin-top: 5px;
+}

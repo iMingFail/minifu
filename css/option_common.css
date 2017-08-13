@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CSS Document NTES reset-start*/
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%;
+}
+ul,
+li,
+div,
+p,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {		/*�ɿ���ɾ��*/
+	text-decoration: none;
+	color: #2a2a2a;
+}
+input {
+	-webkit-appearance: none;
+	outline: none
+}
+* {
+	outline: none;
+	webkit-focus-ring-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+/*.hide {
+	display: none;
+}*/
+index,
+body,
+html {
+	width: 100%;
+	height: 100%;
+	/*myself*/
+	
+	font-family: "Microsoft YaHei", "Helvetica Neue", Arial, HelveticaNeue, Helvetica, "BBAlpha Sans", sans-serif;/*liang*/
+	font-weight: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	color: #d9d9d9;
+	/*myself*/
+}
+/* *{-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-ms-backface-visibility: hidden;backface-visibility: hidden;} ���ڽ��ĳЩ����³������������⣬�����򲻼�*/
+
+body {
+	position: relative;
+	/*myself*/
+	
+	opacity: 1;
+	-webkit-transition: opacity 500ms ease-in;
+	transition: opacity 500ms ease-in;
+}
+/*a,*/
+
+p,
+li {    /*�ɿ���ɾ��*/
+	font-size: 1.2rem;
+	color: #d9d9d9
+}
+/*common.less �˴������������ʽʾ��������Ҫ����ҳ���������е��������ʽ*/
+/*�˴�����orientation ��: and (orientation:portrait),���ֻ����̵���ʱ��rem��ı�*/
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+	html {
+		font-size: 70.3%;
+	}
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+	html {
+		font-size: 73.24%;
+	}
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+	html {
+		font-size: 75%;
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+	html {
+		font-size: 78.125%;
+	}
+}
+@media screen and (min-width: 414px) and (max-width: 431px) {
+	html {
+		font-size: 80.86%;
+	}
+}
+@media screen and (min-width: 432px) and (max-width: 479px) {
+	html {
+		font-size: 84.375%;
+	}
+}
+/*�������������android pad�ֱ������õģ�����ҳ������ȷ���Ƿ���pad�ж�ҳ����зŴ���Ҫ�Ļ����������������ã��������Ҫ��ȥ���������е����ò�����һ�е�(max-width:479px)ȥ��*/
+
+@media screen and (min-width: 480px)and (max-width: 639px) {
+	html {
+		font-size: 93.75%;
+	}
+}
+@media screen and (min-width: 640px){
+	html {
+		font-size: 125%;
+	}
+}
+/* CSS Document NTES reset-end*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*body,
+html {
+    width: 100%;
+    height: 100%;
+    color: #454a4d;
+    font-size: 12px;
+    font-family: "\5fae\8f6f\96c5\9ed1", "Microsoft YaHei", SimHei, Helvetica, Arial, SimSun;
+    line-height: 1.5;
+}*/
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+input,
+img {
+    vertical-align: middle;
+}
+
+a{
+    color: #454a4d;
+    text-decoration: none;
+}
+small {
+    font-size: 80%;
+}
+
+i,
+em,
+b,
+s,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+th{
+    font-weight: normal;
+}
+input,
+button{
+    font-family: "\5fae\8f6f\96c5\9ed1", "Microsoft YaHei", SimHei, Helvetica, Arial, SimSun;
+    line-height: normal;
+    box-shadow: 0;
+    text-shadow: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+input[type=checkbox],
+input[type=radio]{
+    visibility: hidden;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+}
+select{
+    font-family: "\5fae\8f6f\96c5\9ed1", "Microsoft YaHei", SimHei, Helvetica, Arial, SimSun;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+input::-moz-placeholder {
+    color: #d0d0d0;
+}
+textarea::-moz-placeholder {
+    color: #d0d0d0;
+}
+::-webkit-input-placeholder {
+    color: #d0d0d0;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.wrap {
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    background: #202020;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+/* .index{
+    width: 100%;
+    background: #eee;
+    padding-bottom: 15px;
+} */
+/****������������----Start****/
+.pop-box{
+    z-index: 60;
+    width: 100%;
+    border-radius: 8px;
+    background: #2a2a2a;
+    padding-bottom: 0.5em;
+}
+.pop-nav{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background: #4a4a4a;
+    border-radius: 8px 8px 0 0;
+}
+.back{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    background: url("../img/101/apriltrans5.png") center no-repeat;
+    background-size: 100% 100%;
+}
+.pop-nav h3{
+    width: 100%;
+    font-size: 1.6rem;
+    color: #959595;
+    text-align: center;
+    line-height: 4rem;
+}
+.pop-nav h3 span{
+	position: absolute;
+    right: 1em;
+    font-size: 0.8em;
+}
+/****������������----End****/
+
+/****�б�ҳ������ʽ---Start****/
+.list-head{
+    background: #daac33;
+    padding:.3rem 1rem;
+}
+.list-back{
+    float: left;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-top: .2rem;
+    //*background: url("../img/list-back.png") center no-repeat;*/
+    background-size: 100% 100%;
+}
+.list-title{
+    float: left;
+  	margin-left: 1rem;
+  	font-size: 1.5rem;
+  	color: #fff;
+  	line-height: 3rem;
+}
+/****�б�ҳ������ʽ---End****/

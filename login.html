@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>登录</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="wap-font-scale" content="no">
+
+		<link rel="stylesheet" href="css/amazeui.extend.css"/>
+		<link rel="stylesheet" href="css/iconfont.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/common.css"/>
+
+		<script src="js/jquery-1.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<script>
+			var action = "login";
+		</script>
+		<script src="js/userAjax.js"></script>
+	</head>
+	<body>
+		<div class="wrapper login-wrapper">
+			<div class="wx-logo"></div>
+			<div class="login-form def-m mb10">
+				<form action="" id="login-form">
+				<ul class="com-columns span2">
+					<li class="comc-item">
+						<div class="com-formbox am-form-group">
+							<label class="formbox-hd" for="mobilePhone"><i class="iconfont icon-user"></i>&nbsp;</label>
+							<span class="formbox-bd">
+								<input type="tel" id="mobilePhone" name="mobilePhone" onkeyup="this.value=this.value.replace(/ /g,'')" class="input-txt" maxlength="11" placeholder="请输入手机号码" pattern="^\s*1\d{10}\s*$" required data-foolish-msg="手机号码不正确"/>
+							</span>
+						</div>
+					</li>
+					<li class="comc-item">
+						<div class="com-formbox am-form-group">
+							<label class="formbox-hd" for="password"><i class="iconfont icon-lock"></i>&nbsp;</label>
+							<span class="formbox-bd">
+								<input type="password" id="password" name="usrPwd" onkeyup="this.value=this.value.replace(/ /g,'')" class="input-txt" placeholder="请输入交易密码" required data-foolish-msg="请输入交易密码"/>
+							</span>
+						</div>
+					</li>
+				</ul>
+				</form>
+			</div>
+			
+			<div class="def-p com-btnbox mb10">
+				<a href="javascript:void(0);" class="btn btn-1 btn-dis" id="login_btn">登录</a>
+			</div>
+
+			<!--<div class="def-p com-btnbox mb10">
+				<a href="oauth2/oauth2.php" class="btn btn-1 btn-dis">微信登录</a>
+			</div>-->
+			
+			<div class="def-p txtr">
+				<a href="forget_password.html" class="fz13 link" id="findPwd_btn">忘记密码</a>
+			</div>
+			
+			<div class="login-btm">
+				<a href="regist.php" class="btn" id="register_btn">没有帐号？请注册</a>
+			</div>
+		</div>
+
+		<div class="am-modal am-modal-loading am-modal-no-btn" tabindex="1" id="login-loading">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd" id="info-msg"></div>
+				<div class="am-modal-bd">
+					<span class="am-icon-spinner am-icon-spin"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
